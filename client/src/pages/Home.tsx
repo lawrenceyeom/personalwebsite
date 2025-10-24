@@ -310,12 +310,6 @@ export default function Home() {
                     zh: "与来自不同文化背景的同学交流，在牛津大学学习现代领导力理论。", 
                     en: "Communicated with students from different cultural backgrounds and studied modern leadership theories at Oxford University." 
                   })}</p>
-                  <p className="text-sm text-muted-foreground mt-4 italic">
-                    {t({ 
-                      zh: "让我更自豪的是，我们真正帮助了那些迷茫的高三学生，为他们人生中最重要的选择之一提供了宝贵的参考。这让我体会到了分享和指导的力量。", 
-                      en: "What makes me more proud is that we truly helped those uncertain high school seniors, providing a valuable reference for one of their most important life choices. This taught me the power of sharing and mentorship." 
-                    })}
-                  </p>
                 </CardContent>
               </Card>
 
@@ -330,7 +324,7 @@ export default function Home() {
                 <CardContent>
                   <p className="text-sm text-muted-foreground">{t({ 
                     zh: "统筹协调学校招生志愿队在浙江省的招宣工作，组织宣讲会和线上咨询答疑。任内团队获评\"优秀队伍\"称号。", 
-                    en: "As Deputy Team Leader of the Zhejiang team, I coordinated the university's admissions promotion work in Zhejiang Province. From presentations at our alma mater high schools to online consultation Q&A sessions, we used our own experiences and enthusiasm to help younger students better understand Sun Yat-sen University. During my tenure, our team was awarded the 'Outstanding Team' title, but what makes me more proud is that we truly helped those confused high school seniors and provided valuable references for their life choices." 
+                    en: "As Deputy Team Leader of the Zhejiang team, I coordinated the university's admissions promotion work in Zhejiang Province, organizing presentations and online consultation sessions. During my tenure, our team was awarded the 'Outstanding Team' title." 
                   })}</p>
                 </CardContent>
               </Card>
