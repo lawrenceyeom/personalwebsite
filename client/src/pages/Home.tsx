@@ -164,7 +164,7 @@ export default function Home() {
             </div>
             <div className="space-y-6">
               {/* CITIC Securities */}
-              <Card className="group border-l-4 border-l-primary hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer">
+              <Card className="border-l-4 border-l-primary hover:shadow-xl hover:border-l-blue-600 transition-all duration-300 cursor-pointer">
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <div className="w-16 h-16 flex-shrink-0 bg-white rounded-lg p-2 border">
