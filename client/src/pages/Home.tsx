@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, Award, Briefcase, GraduationCap, Lightbulb, Trophy, ExternalLink, Languages, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { toast } from "sonner";
 
 export default function Home() {
   const { language, setLanguage, t } = useLanguage();
@@ -598,9 +599,13 @@ export default function Home() {
                   lawrenceyaorj@outlook.com
                 </Button>
               </a>
-              <Button variant="outline" className="gap-2" onClick={() => {
-                navigator.clipboard.writeText('yrj18905830013');
-                alert(t({ zh: "微信号已复制到剪贴板", en: "WeChat ID copied to clipboard" }));
+              <Button variant="outline" className="gap-2" onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText('yrj18905830013');
+                  toast.success(t({ zh: "微信号已复制：yrj18905830013", en: "WeChat ID copied: yrj18905830013" }));
+                } catch (err) {
+                  toast.error(t({ zh: "复制失败，请手动复制：yrj18905830013", en: "Copy failed, please copy manually: yrj18905830013" }));
+                }
               }}>
                 <MessageCircle className="w-4 h-4" />
                 {t({ zh: "点击复制微信号", en: "Copy WeChat ID" })}
